@@ -19,10 +19,14 @@ My Entry to LD38 - "Small World" - Dev Log
 
 *{2017-04-22 09:03 GMT+1}*: A title screen! And a location:
 
-![Title Screen](title.gif)
+![Title Screen](images/title.gif)
 
 Art is slow.
 
 ## Code
 
 *{2017-04-22 09:56 GMT+1}*: Finally located the bug in my framework - it was trying to push empty uniforms because there aren't any lights defined! Onward!
+
+*{2017-04-22 09:56 GMT+1}*: I have a title scene that when clicked loads a 'test level' of just green tiles. Scene switching works! I also have a scary creature from *somewhere else*:
+
+![Creature](images/creature.png)
