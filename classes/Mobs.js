@@ -37,7 +37,7 @@ extend(Mob, Stalker);
 
 var Scout = function(x, y)
 {
-    Mob.call(this, 16, x, y);
+    Mob.call(this, 20, x, y);
 }
 
 Scout.prototype.update = function()

@@ -2,6 +2,8 @@ var MissionOne = function()
 {
     var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/tiles.png', frame_size: [32, 32]});
     glixl.Scene.call(this, {context: my_game.context, height:256, width:256, sprite_sheet: tiles, tiles_size: {width: 32, height: 32}});
+    
+    this.ambient_light = 1.0;
 
     for (var r=0 ; r<this.MAP_SIZE.height ; r++)
 	{
@@ -33,8 +35,8 @@ var MissionOne = function()
 
 MissionOne.prototype.MAP_SIZE = {width:8, height:8};
 MissionOne.prototype.TILE_SIZE = 32;
-MissionOne.prototype.MAP = [ 1, 1, 0, 1, 1, 1, 1, 1,
-                             1, 1, 1, 1, 1, 1, 1, 1,
+MissionOne.prototype.MAP = [ 2, 2, 0, 1, 1, 1, 1, 1,
+                             2, 1, 1, 1, 1, 1, 1, 1,
                              1, 1, 1, 0, 1, 1, 0, 1,
                              1, 1, 1, 1, 0, 1, 1, 1,
                              1, 1, 1, 1, 1, 1, 1, 1,
