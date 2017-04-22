@@ -1,7 +1,7 @@
 var TestLevel = function()
 {
     var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/tiles.png', frame_size: [32, 32]});
-    glixl.Scene.call(this, {context: my_game.contex, height:256, width:256, sprite_sheet: tiles, tiles_size: {width: 256, height: 256}});
+    glixl.Scene.call(this, {context: my_game.context, height:256, width:256, sprite_sheet: tiles, tiles_size: {width: 32, height: 32}});
     
     
     var MAP_SIZE = {width:8, height:8};
@@ -17,12 +17,6 @@ var TestLevel = function()
                           );
         }
 	}
-    
-    
-    
-    console.log(this.MAP[1])
-    
-    
 }
 
 TestLevel.prototype.MAP = [0];

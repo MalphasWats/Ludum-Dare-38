@@ -1,9 +1,7 @@
 var WorldMap = function(parameters)
 {
-    var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/world.png', frame_size: [256, 256]});
-    parameters.sprite_sheet = tiles;
-    parameters.tile_size = {width: 256, height: 256};
-    glixl.Scene.call(this, parameters);
+    var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/world.png', frame_size: [256, 256]});    
+    glixl.Scene.call(this, {context: my_game.context, width: 256, height: 256, sprite_sheet:tiles, tile_size:{width: 256, height: 256} });
     
     
     this.add_tile(new glixl.Tile({ frame:0, x:0 , y:0, z:0, 
@@ -47,12 +45,11 @@ WorldMap.prototype.mission_one = function()
 {
     console.log('Mission One...');
     var launch = new LaunchMissionControl({x: 75, y:165});
-    launch.show(this.test, this);
-}
-
-WorldMap.prototype.test = function()
-{
-    console.log('Launch!');
+    launch.show((function() {
+                    console.log('Launch!');
+                    //var scene = new TestLevel();//context: my_game.context, width: 256, height: 256} )
+                    my_game.set_scene(new MissionOne());
+                 }), this);
 }
 
 extend(glixl.Scene, WorldMap);
