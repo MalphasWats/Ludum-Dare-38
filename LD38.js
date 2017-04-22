@@ -4,9 +4,12 @@ var LD38 = function()
 {	
     glixl.Game.call(this, {});
     
-    var scene = new glixl.Scene({ context: this.context });
+    var title_sheet = new glixl.SpriteSheet({context: this.context, src: 'title.png', frame_size: [256, 256]});
     
-    this.set_scene(scene);
+    var title_scene = new TitleScene({context: this.context, width: 256, height: 256, sprite_sheet: title_sheet, 
+                                 tile_size: {width: 256, height: 256} });
+    
+    this.set_scene(title_scene);
 }
 
 LD38.prototype.update = function()
