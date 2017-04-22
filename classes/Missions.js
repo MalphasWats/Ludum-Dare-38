@@ -16,7 +16,7 @@ var MissionOne = function()
         }
 	}
 	
-	var sprite = new Stalker(1*this.TILE_SIZE, 1*this.TILE_SIZE);
+	var sprite = new Stalker(2*this.TILE_SIZE-6, 1*this.TILE_SIZE);
 	this.add_sprite(sprite);
 	
 	var sprite = new Scout(7*this.TILE_SIZE, 7*this.TILE_SIZE, 'Brian');
@@ -36,7 +36,7 @@ var MissionOne = function()
 MissionOne.prototype.MAP_SIZE = {width:8, height:8};
 MissionOne.prototype.TILE_SIZE = 32;
 MissionOne.prototype.MAP = [ 2, 2, 0, 1, 1, 1, 1, 1,
-                             2, 1, 1, 1, 1, 1, 1, 1,
+                             2, 3, 1, 1, 1, 1, 1, 1,
                              1, 1, 1, 0, 1, 1, 0, 1,
                              1, 1, 1, 1, 0, 1, 1, 1,
                              1, 1, 1, 1, 1, 1, 1, 1,

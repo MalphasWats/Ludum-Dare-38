@@ -19,6 +19,7 @@ var TitleScene = function(parameters)
     title.use = function()
     {
         my_game.set_scene( new WorldMap() );
+        //my_game.set_scene( new MissionOne() );
     }
     this.add_tile( title ); //TODO: hack because engine doesn't support clicking on Sprites! (Yet).
     this.add_sprite(title);

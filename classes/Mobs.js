@@ -26,7 +26,7 @@ extend(glixl.Sprite, Mob);
 
 var Stalker = function(x, y)
 {
-    Mob.call(this, 8, x, y);
+    Mob.call(this, 9, x, y);
 }
 
 Stalker.prototype.update = function()
