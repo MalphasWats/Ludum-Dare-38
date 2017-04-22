@@ -39,3 +39,7 @@ Art is slow.
 Sorry, your browser doesn't support embedded videos, 
 but don't worry, you can <a href="images/intro.mov">download it</a>.
 </video>
+
+## Missions
+
+*{2017-04-22 18:09 GMT+1}*: After a bit of a break, I've been working on the mission system - I have a *Scout* unit now! I'm really pleased with the UI work I did earlier.
