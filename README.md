@@ -22,3 +22,7 @@ My Entry to LD38 - "Small World" - Dev Log
 ![Title Screen](title.gif)
 
 Art is slow.
+
+## Code
+
+*{2017-04-22 09:56 GMT+1}*: Finally located the bug in my framework - it was trying to push empty uniforms because there aren't any lights defined! Onward!
