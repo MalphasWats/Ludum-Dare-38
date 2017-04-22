@@ -35,7 +35,7 @@ Art is slow.
 
 *{2017-04-22 14:44 GMT+1}*: I've got some simple UI elements working and I've written the back story. I think I know where I'm going!
 
-<video src="images/intro.mov" poster="images/world.png">
+<video src="images/intro.mov" controls>
 Sorry, your browser doesn't support embedded videos, 
 but don't worry, you can <a href="images/intro.mov">download it</a>.
 </video>
