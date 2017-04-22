@@ -43,3 +43,10 @@ but don't worry, you can <a href="images/intro.mov">download it</a>.
 ## Missions
 
 *{2017-04-22 18:09 GMT+1}*: After a bit of a break, I've been working on the mission system - I have a *Scout* unit now! I'm really pleased with the UI work I did earlier.
+
+*{2017-04-22 21:33 GMT+1}*: I took another break for dinner and stuff - y'know, bit of parenting - My scenes were looking a little dull, I remembered that glixl has a default ambient lighting level less than 1.0 (0.68 in fact). After I set each of my scenes to 1.0, things were looking brighter. Eventually, I'd probably want to add lighting, but at this stage I just want it to look bright. 
+
+I made some trees, they're not great but they'll do for now. 
+
+I'm not convinced I chose the right scale for my tiles and sprites at the start. I've got a **lot** of art still to do and I'm pretty sure I won't get it all finished but I've made a lot of progress with the overall engine so the event is already a win for me. I'll keep working on it tomorrow and see where I get to.
+
