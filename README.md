@@ -30,3 +30,12 @@ Art is slow.
 *{2017-04-22 09:56 GMT+1}*: I have a title scene that when clicked loads a 'test level' of just green tiles. Scene switching works! I also have a scary creature from *somewhere else*:
 
 ![Creature](images/creature.png)
+
+## Story
+
+*{2017-04-22 14:44 GMT+1}*: I've got some simple UI elements working and I've written the back story. I think I know where I'm going!
+
+<video src="images/intro.mov" poster="world.png">
+Sorry, your browser doesn't support embedded videos, 
+but don't worry, you can <a href="images/intro.mov">download it</a>.
+</video>

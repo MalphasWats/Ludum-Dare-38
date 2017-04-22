@@ -16,9 +16,7 @@ var TitleScene = function(parameters)
     }
     title.use = function()
     {
-        var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/tiles.png', frame_size: [32, 32]});
-        my_game.set_scene( new TestLevel( {context: my_game.context, width: 256, height: 256, sprite_sheet: tiles, 
-                                          tile_size: {width: 32, height: 32} } )
+        my_game.set_scene( new WorldMap( {context: my_game.context, width: 256, height: 256} )
                          );
     }
     this.add_tile( title ); //TODO: hack because engine doesn't support clicking on Sprites! (Yet).
