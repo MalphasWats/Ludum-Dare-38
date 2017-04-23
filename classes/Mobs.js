@@ -191,6 +191,8 @@ Scout.prototype.update = function()
     
     var destination = my_game.event_queue[0];
     
+    // Is this a sprite or a tile?
+    
     if (destination)
     {
         this.path = my_game.scene.find_path(this, destination);
