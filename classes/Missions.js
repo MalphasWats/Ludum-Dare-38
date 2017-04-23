@@ -9,17 +9,24 @@ var MissionOne = function()
 	{
         for (var c=0 ; c<this.MAP_SIZE.width ; c++)
 		{
-            this.add_tile(new glixl.Tile({ frame:this.MAP[r*this.MAP_SIZE.width+c], x:c*this.TILE_SIZE , y:r*this.TILE_SIZE, z:0, 
-                                            width:this.TILE_SIZE, height: this.TILE_SIZE 
-                                          })
-                          );
+    		if (typeof this.MAP[r*this.MAP_SIZE.width+c] == 'object')
+            {
+                for (var t=0 ; t<this.MAP[r*this.MAP_SIZE.width+c].length ; t++)
+                {
+                    this.add_tile(new glixl.Tile({ frame:this.MAP[r*this.MAP_SIZE.width+c][t], x:c*this.TILE_SIZE , y:r*this.TILE_SIZE, z:t*this.TILE_SIZE, width:this.TILE_SIZE, height: this.TILE_SIZE }));
+                }
+            }
+            else
+            {
+                this.add_tile(new glixl.Tile({ frame:this.MAP[r*this.MAP_SIZE.width+c], x:c*this.TILE_SIZE , y:r*this.TILE_SIZE, z:0, width:this.TILE_SIZE, height: this.TILE_SIZE }));
+            }
         }
 	}
 	
-	var sprite = new Stalker(2*this.TILE_SIZE-6, 2*this.TILE_SIZE);
+	var sprite = new Stalker(2*this.TILE_SIZE, 1*this.TILE_SIZE);
 	this.add_sprite(sprite);
 	
-	var sprite = new Scout(7*this.TILE_SIZE, 8*this.TILE_SIZE, 'Brian');
+	var sprite = new Scout(7*this.TILE_SIZE, 7*this.TILE_SIZE, 'Brian');
 	this.add_sprite(sprite);
 	
 	var dialogue = [
@@ -33,17 +40,16 @@ var MissionOne = function()
     diag.show(this.play, this);
 }
 
-MissionOne.prototype.MAP_SIZE = {width:8, height:8};
 MissionOne.prototype.TILE_SIZE = 32;
-MissionOne.prototype.MAP = [ 2, 2, 0, 1, 1, 1, 1, 1,
-                             2, 3, 1, 1, 1, 1, 1, 1,
+MissionOne.prototype.MAP_SIZE = {width:8, height:8};
+MissionOne.prototype.MAP = [ [0, 2], 1, 0, 1, 1, 1, 1, 1,
+                             0, [4,3], 1, 1, 1, 1, 1, 1,
                              1, 1, 1, 0, 1, 1, 0, 1,
                              1, 1, 1, 1, 0, 1, 1, 1,
                              1, 1, 1, 1, 1, 1, 1, 1,
-                             1, 0, 1, 1, 1, 1, 1, 1,
-                             1, 1, 1, 1, 1, 0, 1, 1,
-                             1, 1, 0, 1, 1, 1, 0, 1,
-                             1, 0, 0, 1, 1, 1, 1, 1,
+                             1, 0, 1, 1, 1, 1, [0, 2], 1,
+                             1, 1, 1, [0, 2], 1, 0, 1, 1,
+                             1, 1, 0, 1, [0, 2], 1, 0, 0,
                             ];
 
 MissionOne.prototype.play = function()

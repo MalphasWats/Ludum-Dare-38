@@ -60,3 +60,7 @@ I'm not convinced I chose the right scale for my tiles and sprites at the start.
 I also found a typo in new code that was stopping the event manager finding the correct tile clicked! Bug-fix Sunday.
 
 The tile-size choice has bitten me again now too, because sprites can't get close enough to each other. I'm going to stick with it for now though and add some more fudge - it's a wider concept issue: how do you deal with different tile sizes in one game. I haven't decided the best way to solve it yet.
+
+*{2017-04-23 16:36 GMT+1}*: I've spent almost the whole day fighting a really annoying bug. I'm not entirely sure why it was so much trouble. Scratch "+1 FTW", the fudge fix fell apart once I added higher tiles (trees) - it's been an issue before, items placed at a higher z-level than the ground were correspondingly offset on the y-axis, which is what I *want*, but not for the first 'layer'. The 'ground' should sit beneath **everything**, which it was, but then also everything *on* the floor was floating. It makes drawing maps a pain and I wanted to fix it but it took ages.
+
+Almost certain I won't be able to submit anything for the compo. *Maybe* I can get something together for the jam but we'll see. I have work tomorrow!
