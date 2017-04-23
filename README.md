@@ -5,6 +5,8 @@ title: Dev Log
 # Ludum-Dare-38
 My Entry to LD38 - "Small World" - Dev Log
 
+# Day 1
+
 *{2017-04-22 07:00 GMT+1}*: I'm an old man, getting up at 2am? No thank you! I begin my jam.
 
 *{2017-04-22 07:29 GMT+1}*: I have completed breakfast (granola and yoghurt, see 'Old Man' above.) I have completed my boilerplate using my homegrown WebGL engine [glixl](https://github.com/MalphasWats/glixl).
@@ -50,3 +52,11 @@ I made some trees, they're not great but they'll do for now.
 
 I'm not convinced I chose the right scale for my tiles and sprites at the start. I've got a **lot** of art still to do and I'm pretty sure I won't get it all finished but I've made a lot of progress with the overall engine so the event is already a win for me. I'll keep working on it tomorrow and see where I get to.
 
+
+# Day 2
+
+*{2017-04-23 11:12 GMT+1}*: Slow start this morning, I'm probably not going to have a game to submit, but we'll see. I'm enjoying working on it and I think it's a good idea, so definitely something I'm going to keep working on after the end of the Jam. Spent the last hour chasing down a bug I'd forgotten about in my framework - in adding movement for my squad (currently just 1 dude), I remembered that the engine messes up the draw order on the bottom tile row! Added some fudge (+1 FTW) and it was away.
+
+I also found a typo in new code that was stopping the event manager finding the correct tile clicked! Bug-fix Sunday.
+
+The tile-size choice has bitten me again now too, because sprites can't get close enough to each other. I'm going to stick with it for now though and add some more fudge - it's a wider concept issue: how do you deal with different tile sizes in one game. I haven't decided the best way to solve it yet.

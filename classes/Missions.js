@@ -1,7 +1,7 @@
 var MissionOne = function()
 {
     var tiles = new glixl.SpriteSheet({context: my_game.context, src: 'sprite_sheets/tiles.png', frame_size: [32, 32]});
-    glixl.Scene.call(this, {context: my_game.context, height:256, width:256, sprite_sheet: tiles, tiles_size: {width: 32, height: 32}});
+    glixl.Scene.call(this, {context: my_game.context, height:256, width:256, sprite_sheet: tiles, tile_size: {width: 32, height: 32}});
     
     this.ambient_light = 1.0;
 
@@ -16,10 +16,10 @@ var MissionOne = function()
         }
 	}
 	
-	var sprite = new Stalker(2*this.TILE_SIZE-6, 1*this.TILE_SIZE);
+	var sprite = new Stalker(2*this.TILE_SIZE-6, 2*this.TILE_SIZE);
 	this.add_sprite(sprite);
 	
-	var sprite = new Scout(7*this.TILE_SIZE, 7*this.TILE_SIZE, 'Brian');
+	var sprite = new Scout(7*this.TILE_SIZE, 8*this.TILE_SIZE, 'Brian');
 	this.add_sprite(sprite);
 	
 	var dialogue = [
