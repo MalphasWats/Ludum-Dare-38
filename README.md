@@ -64,3 +64,9 @@ The tile-size choice has bitten me again now too, because sprites can't get clos
 *{2017-04-23 16:36 GMT+1}*: I've spent almost the whole day fighting a really annoying bug. I'm not entirely sure why it was so much trouble. Scratch "+1 FTW", the fudge fix fell apart once I added higher tiles (trees) - it's been an issue before, items placed at a higher z-level than the ground were correspondingly offset on the y-axis, which is what I *want*, but not for the first 'layer'. The 'ground' should sit beneath **everything**, which it was, but then also everything *on* the floor was floating. It makes drawing maps a pain and I wanted to fix it but it took ages.
 
 Almost certain I won't be able to submit anything for the compo. *Maybe* I can get something together for the jam but we'll see. I have work tomorrow!
+
+## Artificial Intelligence
+
+*{2017-04-23 19:48 GMT+1}*: Today I've largely been hacking away at the engine, which is a little annoying because it has meant there's been very little *game* progress. I think I've finally got that working sensibly now, so I've been able to implement some **very** basic AI behaviour in the creature: It'll start off looking for food, ignoring you. Once it finds food, it will start eating. If you approach it whilst it is eating, it will chase you and attempt to attack you. Currently however, there's no concept of health or of attacking back!
+
+Obviously, I'd like to have multiple different types of creature eventually, with different behaviours. Also, there's no animations so far, but they just take so much time and I'm slow at it!

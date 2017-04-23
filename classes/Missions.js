@@ -23,7 +23,7 @@ var MissionOne = function()
         }
 	}
 	
-	var sprite = new Stalker(2*this.TILE_SIZE, 1*this.TILE_SIZE);
+	var sprite = new Stalker(4*this.TILE_SIZE, 1*this.TILE_SIZE);
 	this.add_sprite(sprite);
 	
 	var sprite = new Scout(7*this.TILE_SIZE, 7*this.TILE_SIZE, 'Brian');
