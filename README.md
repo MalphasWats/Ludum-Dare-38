@@ -70,3 +70,7 @@ Almost certain I won't be able to submit anything for the compo. *Maybe* I can g
 *{2017-04-23 19:48 GMT+1}*: Today I've largely been hacking away at the engine, which is a little annoying because it has meant there's been very little *game* progress. I think I've finally got that working sensibly now, so I've been able to implement some **very** basic AI behaviour in the creature: It'll start off looking for food, ignoring you. Once it finds food, it will start eating. If you approach it whilst it is eating, it will chase you and attempt to attack you. Currently however, there's no concept of health or of attacking back!
 
 Obviously, I'd like to have multiple different types of creature eventually, with different behaviours. Also, there's no animations so far, but they just take so much time and I'm slow at it!
+
+## Animations!
+
+*{2017-04-23 20:21 GMT+1}*: 2-frame animations added to both the creature and the soldier. 30 minutes. They're crap animations but they actually make a huge difference - suddenly the creature is alive! You can also determine what mode it's in (roaming, feeding, attacking) based on which of its 2 animations it's doing and whether or not it's moving.

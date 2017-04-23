@@ -24,6 +24,9 @@ extend(glixl.Sprite, Mob);
 var Stalker = function(x, y)
 {
     Mob.call(this, {frame:9, x:x, y:y, speed:36, x_offset:-8});
+    
+    this.add_animation('walking', [10, 11], 110);
+    this.add_animation('munching', [9, 12], 110);
 
     this.faction = 1;
     this.awareness_radius = 2; // Tiles, all directions.
@@ -39,6 +42,7 @@ Stalker.prototype.update = function()
     // Search for bio matter
     if (this.status == 'idle')
     {
+        this.set_animation('idle');
         var neighbour_tiles = my_game.scene.get_tile_block( {x1: this.x-(this.width*this.awareness_radius), 
                                                              x2: this.x+(this.width*this.awareness_radius),
                                                              y1: this.y-(this.height*this.awareness_radius), 
@@ -86,6 +90,7 @@ Stalker.prototype.update = function()
     }
     else if(this.status == 'moving')
     {
+        this.set_animation('walking');
         if (!this.destination)
         {
             this.status = 'idle';
@@ -122,6 +127,7 @@ Stalker.prototype.update = function()
     }
     else if(this.status == 'feeding')
     {
+        this.set_animation('munching');
         var nearby_sprites = my_game.scene.get_sprites( {x1: this.x-(this.width*this.awareness_radius+this.width/2), 
                                                              x2: this.x+(this.width*this.awareness_radius+this.width/2),
                                                              y1: this.y-(this.height*this.awareness_radius+this.height/2), 
@@ -147,6 +153,7 @@ Stalker.prototype.update = function()
     }
     else if(this.status == 'attacking')
     {
+        this.set_animation('munching');
         var d = Math.abs(this.target.x - this.x) + Math.abs(this.target.y - this.y);
         if (d > this.width*this.awareness_radius+this.width/2)
         {
@@ -174,6 +181,8 @@ extend(Mob, Stalker);
 var Scout = function(x, y)
 {
     Mob.call(this, {frame:20, x:x, y:y, speed:58, x_offset:8});
+    
+    this.add_animation('walking', [21, 22], 140);
 }
 
 Scout.prototype.update = function()
@@ -187,6 +196,13 @@ Scout.prototype.update = function()
         this.path = my_game.scene.find_path(this, destination);
         this.path.shift(); // first coords are current location
         this.destination = this.path.shift();
+        
+        this.set_animation('walking');
+    }
+    
+    if (!this.destination)
+    {
+        this.set_animation('idle');
     }
 }
 extend(Mob, Scout);
