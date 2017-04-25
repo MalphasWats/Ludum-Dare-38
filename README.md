@@ -74,3 +74,34 @@ Obviously, I'd like to have multiple different types of creature eventually, wit
 ## Animations!
 
 *{2017-04-23 20:21 GMT+1}*: 2-frame animations added to both the creature and the soldier. 30 minutes. They're crap animations but they actually make a huge difference - suddenly the creature is alive! You can also determine what mode it's in (roaming, feeding, attacking) based on which of its 2 animations it's doing and whether or not it's moving.
+
+<a id="aftermath"></a>
+
+# The Aftermath
+
+*{2017-04-25 09:45 GMT+1}*: It's Tuesday. Both the Compo and Jam are finished and I didn't end up submitting my game. I thought I'd write a little bit about why, simply because it's interesting (to me) and I'm still very happy with what I *did* achieve over the weekend.
+
+## Issue the first
+
+I'm a 37-year-old husband, father and teacher. Having 24 uninterrupted hours all of my very own is a *huge* indulgance, so 48 is pretty much impossible. That's ok, this is my life and I like it. One of the reasons for doing the compo this time around was to see if it was even vaguely feasible. I'm counting it as a success - I got a few good slices of time to get things done, because my children are *very* good and my wife is incredibly supportive. I *did* feel a little guilty that I was merrily doing my thing without them, however, this guilt did mostly evaporate on about the 10th or 12th "Daaaadddddy! Noah's taking my <thing of most intense focus right now>", or "Daddy, why are you drawing a picture of the world?" and my favorite "Why on earth did you shoot your mummy in the face with your nerf gun? What have you been told about shooting it at people?".
+
+So that was that. Thankfully I have a few months to build up some credit before the next one!
+
+## 'Frame-gine' immaturity
+
+I mentioned at the start that I was using [glixl](https://github.com/MalphasWats/glixl). I have no idea whether it's a [framework or an engine or just a scaffold](https://twitter.com/MalphasWats/status/844832027035680768). I end up using framework and engine interchangably.
+
+That aside I've been working on glixl for some time and I've been through quite a few iterations of it. This was the first time I'd used this version of it 'properly' and it showed its arse a few times. I spent about 2 or 3 hours chasing down an annoying bug where it wouldn't display things in the right z-order on the very bottom row. Most of the time I spent was mindless hacking "Oh, does it work if I just add 1 here" bullshit, which didn't help. I ended up getting annoyed at myself and forcing myself to sit down and think about what was going on properly. I fixed the bug but I wasted a lot of time.
+
+I ended up making a few improvements and fixes to glixl along the way, so it's definitely in better shape than it was. Definitely a win.
+
+## Art
+
+I'm not really an artist. I sometimes flirt with the idea that maybe I am in my own simple way and every now and then I produce something that I don't hate. But I'm not at all consistent and most of all I am **SLOW**. Faced with the challenge of creating a bunch of different creatures, units and structures, each with at least 4 facing directions and associated animations, I balked. I threw some *very* simple animations in at the end and even they improved the look of the thing hugely, but this only served to reinforce how important getting the art right was!
+
+I am making some progress in my arting, but it's slow progress.
+
+## Idea
+
+I got my idea pretty much as I woke up on the Saturday morning. I tried hard to reign in the scope of what I wanted to do to make it achievable and I think what I had was good - endless in scope ultimately, but could be made with just 2 or 3 'missions' for the same of the jam. I found a story to tell and I'd like to try and get it out properly.
+
